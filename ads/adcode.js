@@ -1,7 +1,8 @@
 // JavaScript Document
 
 var ads = [
-	"/ads/theyogurtfamily.html"
+	"/ads/theyogurtfamily.html",
+	"/ads/embergames.html"
 ];
 
 document.getElementsByName("justicehub-ad").forEach(function(item, index, array) {
