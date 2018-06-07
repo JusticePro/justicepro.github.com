@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<script>
+	var mediaPlayer;
+	
+	document.addEventListener("DOMContentLoaded", function() { initialiseMediaPlayer(); }, false);
+	
+	function initialiseMediaPlayer() {
+		mediaPlayer = document.getElementById('media-video');
+		mediaPlayer.controls = false;
+	}
+	
+	function togglePlayPause() {
+		var btn = document.getElementById('play-pause-button');
+		if (mediaPlayer.paused || mediaPlayer.ended) {
+		btn.title = 'Pause';
+		btn.innerHTML = 'Pause';
+		btn.className = 'Pause';
+		mediaPlayer.play();
+	} else {
+		btn.title = 'Play';
+		btn.innerHTML = 'Play';
+		btn.className = 'Play';
+		mediaPlayer.pause();
+	}
+}
+	
+</script>
+
+<body>
+	<div id='media-player' style="background-color: dimgrey; text-align: center">
+     	<video id='media-video' controls>
+        	<source src='meow.mp4' type='video/mp4'>
+        </video>
+         <div id='media-controls'>
+         	<button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'>Play</button>
+         </div>
+     </div>
+</body>
+</html>
