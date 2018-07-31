@@ -12,7 +12,7 @@
 	}
 	
 	.clue {
-		
+		color: limegreen;
 	}
 	
 	.title {
@@ -31,37 +31,55 @@
 	<span>(Case Sensitive)</span>
 	<br>
 	<br>
-	<div id="MichaelBayJokes">
+	<div id="MichaelBayJokes" class="clue">
 		The Surrendering box that lives outside
+		<br>
 	</div>
 	
-	<div id="Activate">
+	<div id="Activate" class="clue">
 		It's robot fighting time!
+		<br>
 	</div>
 	
-	<div id="Gold">
+	<div id="Gold" class="clue">
 		What's my balance?
+		<br>
 	</div>
 	
-	<div id="Climbing">
+	<div id="Climbing" class="clue">
 		The inside tree.
+		<br>
 	</div>
 	
-	<div id="NoItsNotSmartItsPolitics">
+	<div id="NoItsNotSmartItsPolitics" class="clue">
 		Under the cylons.
+		<br>
 	</div>
 	
-	<div id="thereisnocowlevel">
+	<div id="thereisnocowlevel" class="clue">
 		"The Surrendering box that lives outside" - Location: Mailbox, Code to Activate: "#MichaelBayJokes"<br>
 		"It's robot fighting time" - Location: The remotes, Code to Activate: "#Activate"<br>
 		"What's my balance" - Location: Behind my money, Code to Activate: "#Gold"<br>
 		"The inside tree" - Location: Cat tree, Code to Activate: "#Climbing"<br>
 		"Under the cylons" - Location: Under BSG Discs, Code to Activate: "#NoItsNotSmartItsPolitics"<br>
-		"???" - Location: This debug message, Code to Activate: "#Happy41stBirthday"
+		"???" - Location: This debug message, Code to Activate: "#IAmYourFather"
+		<br>
 	</div>
 	
-	<div id="Happy41stBirthday">
-		Input here
+	<div id="IAmYourFather">
+		Do you want the <a href="#" onclick="father_joke()">joke</a> answer or the <a href="#" onclick="father_serious()">serious</a> answer?
+		<br>
+		<div id="IAmYourFather_joke">
+			<br>
+			"No Justice, I am your father"<br>
+			"NOOOOOOOOOO"
+		</div>
+		
+		<div id="IAmYourFather_serious">
+			<br>
+			Thanks for Playing my treasure hunt!<br>
+			Your gift is in the potato box.
+		</div>
 	</div>
 	
 </body>

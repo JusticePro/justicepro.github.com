@@ -5,7 +5,7 @@ function enterCode() {
 	
 	if (code != "") {
 		
-		var valid = (code==="MichaelBayJokes") || (code==="Activate") || (code==="Gold") || (code==="Climbing") || (code==="NoItsNotSmartItsPolitics") || (code==="thereisnocowlevel") || (code==="Happy41stBirthday");
+		var valid = (code==="MichaelBayJokes") || (code==="Activate") || (code==="Gold") || (code==="Climbing") || (code==="NoItsNotSmartItsPolitics") || (code==="thereisnocowlevel") || (code==="IAmYourFather");
 		
 		if (valid) {
 			
@@ -33,16 +33,26 @@ function enterCode() {
 				document.getElementById("thereisnocowlevel").style.display = "";
 			}
 			
-			if (code==="Happy41stBirthday") {
-				document.getElementById("Happy41stBirthday").style.display = "";
+			if (code==="IAmYourFather") {
+				document.getElementById("IAmYourFather").style.display = "";
 			}
 			
+		}else {
+			alert("Invalid Code.");
 		}
 		
 	}else {
-		alert("Input Code");
+		alert("Code cannot be empty.");
 	}
 	
+}
+
+function father_joke() {
+	document.getElementById("IAmYourFather_joke").style.display = "";
+}
+
+function father_serious() {
+	document.getElementById("IAmYourFather_serious").style.display = "";
 }
 
 document.getElementById("MichaelBayJokes").style.display = "none";
@@ -51,4 +61,6 @@ document.getElementById("Gold").style.display = "none";
 document.getElementById("Climbing").style.display = "none";
 document.getElementById("NoItsNotSmartItsPolitics").style.display = "none";
 document.getElementById("thereisnocowlevel").style.display = "none";
-document.getElementById("Happy41stBirthday").style.display = "none";
+document.getElementById("IAmYourFather").style.display = "none";
+document.getElementById("IAmYourFather_joke").style.display = "none";
+document.getElementById("IAmYourFather_serious").style.display = "none";
