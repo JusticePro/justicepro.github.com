@@ -5,7 +5,7 @@ function enterCode() {
 	
 	if (code != "") {
 		
-		var valid = (code==="MichaelBayJokes") || (code==="Activate") || (code==="Gold") || (code==="Climbing") || (code==="NoItsNotSmartItsPolitics") || (code==="thereisnocowlevel") || (code==="IAmYourFather");
+		var valid = (code==="MichaelBayJokes") || (code==="Activate") || (code==="Gold") || (code==="Climbing") || (code==="NoItsNotSmartItsPolitics") || (code==="thereisnocowlevel") || (code==="IAmYourFather") || (code==="nocontext");
 		
 		if (valid) {
 			
@@ -37,6 +37,10 @@ function enterCode() {
 				document.getElementById("IAmYourFather").style.display = "";
 			}
 			
+			if (code==="nocontext") {
+				document.getElementById("nocontext").style.display = "";
+			}
+			
 		}else {
 			alert("Invalid Code.");
 		}
@@ -64,3 +68,4 @@ document.getElementById("thereisnocowlevel").style.display = "none";
 document.getElementById("IAmYourFather").style.display = "none";
 document.getElementById("IAmYourFather_joke").style.display = "none";
 document.getElementById("IAmYourFather_serious").style.display = "none";
+document.getElementById("nocontext").style.display = "none";
