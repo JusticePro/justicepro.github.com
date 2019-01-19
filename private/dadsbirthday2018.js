@@ -5,7 +5,7 @@ function enterCode() {
 	
 	if (code != "") {
 		
-		var valid = (code==="MichaelBayJokes") || (code==="Activate") || (code==="Gold") || (code==="Climbing") || (code==="NoItsNotSmartItsPolitics") || (code==="thereisnocowlevel") || (code==="IAmYourFather") || (code==="nocontext");
+		var valid = (code==="MichaelBayJokes") || (code==="Activate") || (code==="Gold") || (code==="Climbing") || (code==="NoItsNotSmartItsPolitics") || (code==="thereisnocowlevel") || (code==="IAmYourFather") || (code==="nocontext") || (code==="lol");
 		
 		if (valid) {
 			
