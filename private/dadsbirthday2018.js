@@ -41,6 +41,10 @@ function enterCode() {
 				document.getElementById("nocontext").style.display = "";
 			}
 			
+			if (code==="lol") {
+				document.getElementById("lol").style.display = "";
+			}
+			
 		}else {
 			alert("Invalid Code.");
 		}
@@ -69,3 +73,4 @@ document.getElementById("IAmYourFather").style.display = "none";
 document.getElementById("IAmYourFather_joke").style.display = "none";
 document.getElementById("IAmYourFather_serious").style.display = "none";
 document.getElementById("nocontext").style.display = "none";
+document.getElementById("lol").style.display = "none";
