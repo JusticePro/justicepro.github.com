@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hunt.js</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .title {
+            background-color: #00ff05;
+            padding: 10px;
+            color: #007d03;
+            width: 100%;
+        }
+
+        .content {
+            width: 50%;
+        }
+
+        .button {
+            width: 25%;
+        }
+    </style>
+    <script src="hunt.js"></script>
+    <script src="B AM 2019.js"></script>
+</head>
+
+    <body onload="onLoad()">
+        <h2 class="title" id="title">Hunt.js</h2>
+        <hr />
+
+        <div>
+            <h2 id="hint"></h2>
+        </div>
+
+        <input class="content" id="textId" type="text" placeholder="&lt;ID&gt;" /><br />
+        <br />
+        <input class="button" id="buttonSubmit" onclick="tryId('textId')" type="button" value="Submit" />
+
+    </body>
+    
+</html>
